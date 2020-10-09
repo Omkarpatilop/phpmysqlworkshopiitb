@@ -1,9 +1,9 @@
 <?php
 $username = "root";
-$password = "dope";
+$password = "";
 $db="result";
 $table="class1";
-$conn = mysqli_connect("localhost:8080", $username, $password,$db) or die(mysqli_connect_error());
+$conn = mysqli_connect("localhost:3306", $username, $password,$db) or die(mysqli_connect_error());
 mysqli_select_db($conn,$db) or die(mysqli_error($conn));
 echo "Connected successfully <br>";
 ?>
